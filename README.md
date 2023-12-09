@@ -25,3 +25,26 @@
     >> PlayFilters      FilterComponent.jsx
     >> Poster           PosterComponent.jsx
     >> PosterSlider     PosterSliderComponent.jsx
+
+# tailwind css :
+
+    >> npm install react-slick (to install)
+    >> npm install slick-carousel (to install carousel)
+
+# headlessui :
+
+    >> used smoothly with tailwind, we use it for extra feature like transition, toogle, listbox etc...
+
+    >> npm install @headlessui/react (to install)
+
+# react-icons :
+
+    >> to use icons in our project we use it from react icons
+
+    >>npm install react-icons (to install)
+
+# Axios : (with respect to deal with http request we need axios)
+
+    >> npm install axios (to install)
+
+    >>> here we use it to connect front-end & back-end
