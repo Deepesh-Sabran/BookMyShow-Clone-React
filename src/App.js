@@ -11,14 +11,17 @@ import "slick-carousel/slick/slick-theme.css";
 import HomePage from "./components/Pages/HomePage";
 import MoviePage from "./components/Pages/MoviePage";
 import PlayPage from "./components/Pages/PlayPage";
+import MovieProvider from "./components/context/MovieContext";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/movie/:id" element={<MoviePage />} />
-      <Route path="/plays" element={<PlayPage />} />
-    </Routes>
+    <MovieProvider>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/movie/:id" element={<MoviePage />} />
+        <Route path="/plays" element={<PlayPage />} />
+      </Routes>
+    </MovieProvider>
   );
 }
 
