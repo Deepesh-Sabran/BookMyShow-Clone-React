@@ -7,9 +7,9 @@ const PosterSliderComponent = (props) => {
   const settings = {
     infinite: true,
     speed: 750,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 4,
-    initialSlide: 6,
+    initialSlide: 12,
     responsive: [
       {
         breakpoint: 1024,

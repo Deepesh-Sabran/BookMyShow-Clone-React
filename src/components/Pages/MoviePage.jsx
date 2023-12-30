@@ -130,18 +130,18 @@ const MoviePage = () => {
     <>
       <MovieHero />
       <div className="my-12 container px-4 lg-ml-20 lg:w-2/1">
-        <div className="flex flex-col items-start gap-3">
+        <div className="flex flex-col items-start gap-3 lg:ml-40">
           <h1 className="text-gray-800 font-bold gap-3 text-2xl">
             About the movie
           </h1>
           <p>{movie.overview}</p>
         </div>
 
-        <div className="my-8">
+        <div className="h-px my-8 bg-gray-300 border-0 lg:ml-40">
           <hr />
         </div>
 
-        <div className="my-8">
+        <div className="my-8 lg:ml-40">
           <h2 className="text-gray-800 font-bold text-2xl mb-3">
             Applicable Offers
           </h2>
@@ -176,12 +176,12 @@ const MoviePage = () => {
           </div>
         </div>
 
-        <div className="my-8">
+        <div className="h-px my-8 bg-gray-300 border-0 lg:ml-40">
           <hr />
         </div>
 
         {/* Recommended Sliders */}
-        <div className="my-8">
+        <div className="my-8 lg:ml-40">
           <PosterSliderComponent
             config={settings}
             title="Recommended Movies"
@@ -190,12 +190,12 @@ const MoviePage = () => {
           />
         </div>
 
-        <div className="my-8">
+        <div className="h-px my-8 bg-gray-300 border-0 lg:ml-40">
           <hr />
         </div>
 
         {/* Cast Slider */}
-        <div className="my-8">
+        <div className="my-8 lg:ml-40">
           <h2 className="text-gray-800 font-bold text-2xl mb-4">
             Cast and Crew
           </h2>
@@ -211,16 +211,18 @@ const MoviePage = () => {
           </Slider>
         </div>
 
-        <div className="my-8">
+        <div className="h-px my-8 bg-gray-300 border-0 lg:ml-40">
           <hr />
         </div>
 
-        <PosterSliderComponent
-          config={settings}
-          title="BMS XCLUSIVE Movies"
-          posters={similarMovies}
-          isDark={false}
-        />
+        <div className="my-8 lg:ml-40">
+          <PosterSliderComponent
+            config={settings}
+            title="BMS XCLUSIVE Movies"
+            posters={similarMovies}
+            isDark={false}
+          />
+        </div>
       </div>
     </>
   );

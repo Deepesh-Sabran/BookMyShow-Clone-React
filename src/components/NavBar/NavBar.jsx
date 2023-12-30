@@ -1,5 +1,6 @@
 import React from "react";
 import { BiChevronDown, BiMenu, BiSearch } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 
 function NavSm() {
   return (
@@ -59,8 +60,11 @@ function NavLg() {
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-gray-700 text-base flex items-center cursor-pointer hover:text-white">
+          <span className="text-gray-700 text-base flex items-center cursor-pointer hover:text-red-500">
             Hospet <BiChevronDown />
+          </span>
+          <span className="text-gray-700 text-base flex items-center cursor-pointer hover:text-red-500">
+            <NavLink to="/plays">Plays</NavLink>
           </span>
           <button className="bg-red-600 text-white px-2 py-1 text-sm rounded">
             Sign In

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { MovieContext } from "../context/MovieContext";
 import PaymentModal from "../payment/PaymentModal";
+import { PiCurrencyInrBold } from "react-icons/pi";
 
 const MovieInfo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,15 +42,15 @@ const MovieInfo = () => {
         <div className="flex items-center gap-3 md:px-4 md:w-screen text-xl px-4">
           <button
             onClick={rentMovie}
-            className="bg-red-500  py-3 text-white font-semibold rounded-lg"
+            className="bg-red-500  py-3 text-white font-semibold rounded-lg flex"
           >
-            Rent $149
+            Rent <PiCurrencyInrBold className="mt-1.5" /> 149
           </button>
           <button
             onClick={buyMovie}
-            className="bg-red-500  py-3 text-white font-semibold rounded-lg"
+            className="bg-red-500  py-3 text-white font-semibold rounded-lg flex"
           >
-            Buy $999
+            Buy <PiCurrencyInrBold className="mt-1.5" /> 999
           </button>
         </div>
       </div>
